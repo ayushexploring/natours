@@ -1,3 +1,11 @@
+/* 1rem             = 1 x root font size (here, 10px in html selector) */
+/* 1em (for font)   = 1 x parent element's computed font size */
+/* 1em (for length) = 1 x current element's computed font size */
+/* 1% (for font)    = 1% of parent element's computed font size */
+/* 1% (for length)  = 1% of parent element's computed width */
+/* 1vh              = 1% of viewport height */
+/* 1vw              = 1% of viewport width */
+
 @import "abstracts/functions";
 @import "abstracts/variables";
 @import "abstracts/mixins";
@@ -8,16 +16,9 @@
 @import "base/utilities";
 
 @import "components/button";
+@import "components/composition";
 
 @import "layout/grid";
 @import "layout/header";
 
 @import "pages/home";
-
-/* 1rem             = 1 x root font size (here, 10px in html selector) */
-/* 1em (for font)   = 1 x parent element's computed font size */
-/* 1em (for length) = 1 x current element's computed font size */
-/* 1% (for font)    = 1% of parent element's computed font size */
-/* 1% (for length)  = 1% of parent element's computed width */
-/* 1vh              = 1% of viewport height */
-/* 1vw              = 1% of viewport width */

@@ -1,3 +1,4 @@
+// this partial contains mixins which are independent reusable codes
 @mixin clearfix {
     &::after {
         /* Height of an element collapses if it's child elements are floated.
