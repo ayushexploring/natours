@@ -1,0 +1,9 @@
+@mixin clearfix {
+    &::after {
+        /* Height of an element collapses if it's child elements are floated.
+        This mixin fixes the issue of collapsed height */
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
