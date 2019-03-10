@@ -30,6 +30,7 @@
         }
 
         &:hover {
+            // .composition__photo:hover
             outline: 1.5rem solid $color-primary;
             transform: scale(1.05) translateY(-.5rem);
             box-shadow: 0 2.5rm 4rem rgba($color-black, .5);
@@ -39,6 +40,8 @@
 
     &:hover &__photo:not(:hover) {
         // .composition:hover .composition__photo:not(:hover)
+        /* selects the entire composition elements on hover and then unselects the __photo inside composition
+        which are not hovered */
         transform: scale(0.95);
     }
 }
