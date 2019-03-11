@@ -41,6 +41,17 @@
         }
     }
 
+    &--green {
+        // .btn--green 
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            // .btn--green::after 
+            background-color: $color-primary;
+        }
+    }
+
     &::after {
         // .btn::after 
         content: "";
