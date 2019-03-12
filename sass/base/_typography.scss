@@ -11,6 +11,7 @@ body {
 .heading-primary {
     color: $color-white;
     text-transform: uppercase;
+    /* to fix animation shaking glitch(if any) at animation end */
     backface-visibility: hidden;
     margin-bottom: 6rem;
 
