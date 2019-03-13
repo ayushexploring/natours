@@ -183,6 +183,7 @@
 
     /* BACK SIDE STYLING */
     &__cta {
+        // .card__cta
         position: absolute;
         top: 50%;
         left: 50%;
@@ -192,17 +193,20 @@
     }
 
     &__price-box {
+        // .card__price-box
         text-align: center; 
         color: $color-white;
         margin-bottom: 8rem;
     }
 
     &__price-only {
+        // .card__price-only
         font-size: 1.4rem;
         text-transform: uppercase;
     }
 
     &__price-value {
+        // .card__price-value
         font-size: 6rem;
         font-weight: 100;
     }

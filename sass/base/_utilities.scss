@@ -1,9 +1,11 @@
 // utilities sass partial is used to describe specific css for specific elements independently.
-.u-center-text { text-align: center; }
+/* we have used !important because we need to strictly apply the css rules in utilities,
+that's what the goal of utilites is */
+.u-center-text { text-align: center !important; }
 
-.u-margin-bottom-small { margin-bottom: 1.5rem; }
-.u-margin-bottom-medium { margin-bottom: 4rem; }
-.u-margin-bottom-big { margin-bottom: 8rem; }
+.u-margin-bottom-small { margin-bottom: 1.5rem !important; }
+.u-margin-bottom-medium { margin-bottom: 4rem !important; }
+.u-margin-bottom-big { margin-bottom: 8rem !important; }
 
-.u-margin-top-big { margin-top: 8rem; }
-.u-margin-top-huge { margin-top: 10rem; }
+.u-margin-top-big { margin-top: 8rem !important; }
+.u-margin-top-huge { margin-top: 10rem !important; }

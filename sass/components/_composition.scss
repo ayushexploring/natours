@@ -9,6 +9,7 @@
         position: absolute;
         z-index: 10;
         transition: all .2s;
+        /* draws the border/outline outside of border edge, i.e creates a space between border/outline and image */
         outline-offset: 2rem;
 
         &--p1 {
@@ -31,6 +32,7 @@
 
         &:hover {
             // .composition__photo:hover
+            /* outline property is similar to border */
             outline: 1.5rem solid $color-primary;
             transform: scale(1.05) translateY(-.5rem);
             box-shadow: 0 2.5rm 4rem rgba($color-black, .5);

@@ -23,6 +23,7 @@
     &:hover {
         // .feature-box:hover
         transform: translateY(-1.5rem) scale(1.03);
+        /* box-shadow: (x-direction) (y-direction) (blur) (color) */
         box-shadow: 0 2rem 4rem rgba($color-black, .15);
     }
 }

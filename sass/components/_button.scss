@@ -1,7 +1,10 @@
 .btn {
+    &,
     &:link,
     &:visited {
-        // .btn:link, .btn:visited 
+        // .btn 
+        // .btn:link 
+        // .btn:visited 
         text-transform: uppercase;
         text-decoration: none;
         padding: 1.5rem 4rem;
@@ -10,6 +13,10 @@
         transition: all .2s;
         position: relative;
         font-size: $default-font-size;
+
+        /* Change for <button> element */
+        border: none;
+        cursor: pointer;
     }
 
     &:hover {
@@ -24,8 +31,12 @@
         }
     }
 
-    &:active {
+    &:active,
+    &:focus {
         // .btn:active 
+        // .btn:focus
+        /* to remove the outline on focus */
+        outline: none;
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-black, .2);
     }
