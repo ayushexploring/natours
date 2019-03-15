@@ -47,6 +47,7 @@
         color: $color-grey-dark;
 
         &::after {
+            
             // .btn--white::after 
             background-color: $color-white;
         }
@@ -64,6 +65,7 @@
     }
 
     &::after {
+        /* to use before and after pseudoelements, their content property must be defined */
         // .btn::after 
         content: "";
         display: inline-block;
