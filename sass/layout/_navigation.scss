@@ -116,12 +116,16 @@
 
     // ICON
     &__icon {
+         // .navigation__icon
         position: relative;
         margin-top: 3.5rem;
         
         &,
         &::before,
         &::after {
+            // .navigation__icon,
+            // .navigation__icon::before,
+            // .navigation__icon::after
             width: 3rem;
             height: 2.5px;
             background-color: $color-grey-dark-3;
@@ -130,6 +134,8 @@
 
         &::before,
         &::after {
+            // .navigation__icon::before,
+            // .navigation__icon::after
             /* to use before and after pseudoelements, their content property must be defined */
             content: "";
             position: absolute;
@@ -137,14 +143,27 @@
             transition: all .2s;
         }
 
-        &::before { top: -.8rem; }
-        &::after { top: .8rem; }
+        &::before { 
+            // .navigation__icon::before
+            top: -.8rem; 
+        }
+        &::after { 
+            // .navigation__icon::after
+            top: .8rem; 
+        }
     }
 
-    &__button:hover &__icon::before { top: -1rem; }
-    &__button:hover &__icon::after { top: 1rem; }
+    &__button:hover &__icon::before { 
+        // .navigation__button:hover .navigation__icon::before
+        top: -1rem; 
+    }
+    &__button:hover &__icon::after { 
+        // .navigation__button:hover .navigation__icon::after
+        top: 1rem; 
+    }
 
     &__checkbox:checked + &__button &__icon {
+        // .navigation__checkbox:checked + .navigation__button .navigation__icon
         /* when the &__checkbox is checked, we select the adjacent sibling of checkbox which is &__button,
         then select the &__icon */
         /* + selects the adjacent sibling */
@@ -152,6 +171,7 @@
     }
 
     &__checkbox:checked + &__button &__icon::before {
+        // .navigation__checkbox:checked + .navigation__button .navigation__icon::before
         /* when the &__checkbox is checked, we select the adjacent sibling of checkbox which is &__button,
         then select the &__icon::before */
         /* + selects the adjacent sibling */
@@ -160,6 +180,7 @@
     }
 
     &__checkbox:checked + &__button &__icon::after {
+        // .navigation__checkbox:checked + .navigation__button .navigation__icon::after
         /* when the &__checkbox is checked, we select the adjacent sibling of checkbox which is &__button,
         then select the &__icon:after */
         /* + selects the adjacent sibling */
