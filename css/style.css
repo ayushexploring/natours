@@ -595,9 +595,18 @@ that's what the goal of utilites is */
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all .4s .2s; }
+    @media only screen and (max-width: 75em) {
+      .popup__content {
+        width: 95%; } }
+    @media only screen and (max-width: 56.25em) {
+      .popup__content {
+        width: 80%; } }
   .popup__left {
     width: 33.333333%;
     display: table-cell; }
+    @media only screen and (max-width: 56.25em) {
+      .popup__left {
+        display: none; } }
   .popup__right {
     width: 66.666667%;
     display: table-cell;
