@@ -8,10 +8,44 @@
 }
 
 html {
-    /* This defines value of 1 rem, which is 10 px in our page */
-    font-size: 62.5%; /* 62.5% of 16px(browser default) = 10px */
+    /* This defines value of 1 rem, which is 10 px in our page. 62.5% of 16px(browser default) = 10px */
+    font-size: 62.5%;
+
+    @include respond(tab-land) {
+        /* tab-land, width < 1200px? */
+        /* We want 1rem = 9px for tab-land. So 56.25% of 16px(browser default) is 9px. So we set font-size to 56.25%.
+         9/16 = 0.5625 = 56.25% */
+        font-size: 56.25%;
+    }
+
+    @include respond(tab-port) {
+        /* tab-port, width < 900px? */
+        /* We want 1rem = 8px for tab-port. So 50% of 16px(browser default) is 8px. So we set font-size to 50%.
+         8/16 = 0.50 = 50% */
+        font-size: 50%;
+    }
+
+    @include respond(big-desktop) {
+        /* big-desktop */
+        /* We want 1rem = 12px for big-desktop. So 75% of 16px(browser default) is 12px. So we set font-size to 75%.
+         12/16 = 0.75 = 75% */
+        font-size: 75%;
+    }
+
+    /* 
+    @include respond(phone) {
+        This media query is not necessary because font size of phone devices(max-width: 600px) will lie in the range
+        of tab-port(max-width: 900px) so rules of tab-port would apply on phone.
+        font-size: 
+    }
+    */
 }
 
 body {
     box-sizing: border-box;
+    padding: 3rem;
+
+    @include respond(tab-port) {
+        padding: 0;
+    }
 }
